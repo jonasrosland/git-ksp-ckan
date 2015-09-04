@@ -1,0 +1,163 @@
+{
+	"kind": "metapackage",
+	"abstract": "A list of modules installed on the default KSP instance",
+	"name": "installed-default",
+	"license": "unknown",
+	"version": "2015.09.04.09.45.01",
+	"identifier": "installed-default",
+	"spec_version": "v1.6",
+	"depends": [
+		{
+			"name": "RemoteTech",
+			"version": "v1.6.7"
+		},
+		{
+			"name": "ModuleManager",
+			"version": "2.6.7"
+		},
+		{
+			"name": "TarsierSpaceTechnologyWithGalaxies",
+			"version": "1:5.4.1"
+		},
+		{
+			"name": "DockingPortAlignmentIndicator",
+			"version": "6.2.0"
+		},
+		{
+			"name": "DMagicOrbitalScience",
+			"version": "1.0.8"
+		},
+		{
+			"name": "ContractsWindowPlus",
+			"version": "5.3"
+		},
+		{
+			"name": "NMSG",
+			"version": "1.3"
+		},
+		{
+			"name": "CrowdSourcedScience",
+			"version": "v3.0"
+		},
+		{
+			"name": "ScienceAlert",
+			"version": "1.8.9"
+		},
+		{
+			"name": "xScience",
+			"version": "4.8"
+		},
+		{
+			"name": "StationScience",
+			"version": "1.5"
+		},
+		{
+			"name": "WaypointManager",
+			"version": "2.4.2"
+		},
+		{
+			"name": "ContractConfigurator-ScanSatLite",
+			"version": "1.3"
+		},
+		{
+			"name": "SCANsat",
+			"version": "v14.1"
+		},
+		{
+			"name": "ContractConfigurator",
+			"version": "1.6.6"
+		},
+		{
+			"name": "KAS",
+			"version": "0.5.4"
+		},
+		{
+			"name": "KIS",
+			"version": "1.2.2"
+		},
+		{
+			"name": "ContractConfigurator-RemoteTechLite",
+			"version": "1.1"
+		},
+		{
+			"name": "KerbalEngineerRedux",
+			"version": "1.0.18.0"
+		},
+		{
+			"name": "MechJebForAll",
+			"version": "1.2.0.0"
+		},
+		{
+			"name": "MechJeb2",
+			"version": "2.5.3"
+		},
+		{
+			"name": "CapCom",
+			"version": "1.2"
+		},
+		{
+			"name": "RealPlume",
+			"version": "1:v10.4.9"
+		},
+		{
+			"name": "RealPlume-StockConfigs",
+			"version": "v0.7"
+		},
+		{
+			"name": "SmokeScreen",
+			"version": "2.6.9"
+		},
+		{
+			"name": "EngineLighting",
+			"version": "1.4.0"
+		},
+		{
+			"name": "MenuStabilizer",
+			"version": "1"
+		},
+		{
+			"name": "PlanetShine",
+			"version": "0.2.3.1"
+		},
+		{
+			"name": "PlanetShine-Config-Default",
+			"version": "0.2.3.1"
+		},
+		{
+			"name": "EnvironmentalVisualEnhancements-LR",
+			"version": "7-4"
+		},
+		{
+			"name": "EnvironmentalVisualEnhancements",
+			"version": "7-4"
+		},
+		{
+			"name": "RealChute",
+			"version": "1.3.2.3"
+		},
+		{
+			"name": "KerbalJointReinforcement",
+			"version": "v3.1.4"
+		},
+		{
+			"name": "InfernalRobotics",
+			"version": "v0.21.3"
+		},
+		{
+			"name": "IR-Model-Rework-Core",
+			"version": "v01b"
+		},
+		{
+			"name": "IR-Model-Rework-Expansion",
+			"version": "v01b"
+		},
+		{
+			"name": "TweakScale",
+			"version": "v2.2.1"
+		},
+		{
+			"name": "AtmosphericSoundEnhancement",
+			"version": "2.2"
+		}
+	]
+}
