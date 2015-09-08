@@ -7,7 +7,7 @@ GAME
 	linkCaption = 
 	Mode = CAREER
 	Status = 1
-	scene = 5
+	scene = 7
 	editor = None
 	flag = Squad/Flags/default
 	launchID = 28
@@ -87,7 +87,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 4643339.4920559
+		update = 3482739.90622771
 		CONTRACTS
 		{
 			CONTRACT
@@ -106,7 +106,7 @@ GAME
 				PARAM
 				{
 					name = LocationAndSituationParameter
-					state = Incomplete
+					state = Complete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
 					targetBody = 1
@@ -120,8 +120,8 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					hasAntenna = False
-					hasPowerGenerator = False
+					hasAntenna = True
+					hasPowerGenerator = True
 					hasDockingPort = False
 					typeString = station
 					launchID = 12
@@ -174,8 +174,8 @@ GAME
 					state = Complete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					hasAntenna = False
-					hasPowerGenerator = False
+					hasAntenna = True
+					hasPowerGenerator = True
 					launchID = 12
 				}
 				PARAM
@@ -232,6 +232,50 @@ GAME
 					disableOnStateChange = False
 					values = 0,0,0,0,0
 					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 5180a3b6-981b-4ab4-abe3-0d7f51c17185
+				type = DMSurveyContract
+				prestige = 0
+				seed = -297059326
+				state = Offered
+				agent = DMagic
+				deadlineType = Floating
+				expiryType = Floating
+				values = 350460,27844041.8106079,31824,39312,31824,0,4,3,3527025.91387811,0,0,0
+				Survey_Target = 2
+				PARAM
+				{
+					name = DMCompleteParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					Parent_Parameter_Type = 0|2
+					PARAM
+					{
+						name = DMCollectScience
+						id = CollectScience
+						state = Incomplete
+						values = 4200,0,5,0,0
+						Science_Subject = 0|Mystery Goo Observation|2|32||0
+					}
+					PARAM
+					{
+						name = DMCollectScience
+						id = CollectScience
+						state = Incomplete
+						values = 6272,0,19,0,0
+						Science_Subject = 0|Materials Study|2|16||0
+					}
+					PARAM
+					{
+						name = DMCollectScience
+						id = CollectScience
+						state = Incomplete
+						values = 4704,0,5,0,0
+						Science_Subject = 0|Irradiance Scan|2|32||0
+					}
 				}
 			}
 			CONTRACT
@@ -310,112 +354,42 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 1ba64d38-b22c-47b9-a381-d7bb26165c92
-				type = StnSciContract
+				guid = a17341d9-f860-4f17-a683-8117003e5cbf
+				type = SatelliteContract
 				prestige = 0
-				seed = -197969603
+				seed = -1615929290
 				state = Offered
-				agent = Periapsis Rocket Supplies Co
+				agent = Rokea Inc
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,84654718.2449341,320000,960000,480000,52,52,78,4691384.58020364,0,0,0
-				targetBody = Mun
-				experimentType = StnSciExperiment1
-				value = 3
-				PARAM
-				{
-					name = StnSciParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					targetBody = Mun
-					experimentType = StnSciExperiment1
-					PARAM
-					{
-						name = NewPodParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-					}
-					PARAM
-					{
-						name = DoExperimentParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-					}
-					PARAM
-					{
-						name = ReturnExperimentParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 40b2a0b6-577b-41aa-97a7-755181652a05
-				type = TSTChemCamContract
-				prestige = 0
-				seed = -197969600
-				state = Offered
-				agent = Tarsier Space Technology
-				deadlineType = None
-				expiryType = None
-				values = 0,0,300,415.999984741211,311.999988555908,30,34.49519,0,0,0,0,0
-				target = Kerbin
-				biome = Mountains
-				PARAM
-				{
-					name = TSTScienceParam
-					state = Incomplete
-					values = 0,0,0,0,0
-					FIELD = TarsierSpaceTech.ChemCam
-					FIELD = Kerbin
-					FIELD = Mountains
-				}
-			}
-			CONTRACT
-			{
-				guid = 62adf8a3-b99d-43a1-a4fc-548af16705b4
-				type = StationContract
-				prestige = 0
-				seed = -197969599
-				state = Offered
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 61132.0705890656,121530556.331062,59259.2582702637,161388.878866258,67199.9969482422,0,19.24034,8.823529,4687716.6507927,0,0,0
+				values = 97968.0651114881,83468791.4749878,34278.3977905274,92230.3098666767,34607.9974670411,0,9.801204,5,3578248.42906974,0,0,0
 				targetBody = 2
-				capacity = 5
+				deviation = 7
+				orbitType = 6
 				PARAM
 				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 2
-					targetSituation = 5
-					noun = station
-					finalObjective = False
-				}
-				PARAM
-				{
-					name = FacilitySystemsParameter
+					name = ProbeSystemsParameter
 					state = Incomplete
 					values = 0,0,0,0,0
 					hasAntenna = False
 					hasPowerGenerator = False
-					hasDockingPort = False
-					typeString = station
 					launchID = 0
 				}
 				PARAM
 				{
-					name = CrewCapacityParameter
+					name = SpecificOrbitParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetCapacity = 5
+					targetBody = 2
+					deviationWindow = 7
+					orbitType = 6
+					inclination = 11.9824379400445
+					eccentricity = 0.0648951632267886
+					sma = 303207.365675663
+					lan = 333.700054964842
+					argumentOfPeriapsis = 199.202410695572
+					meanAnomalyAtEpoch = 3.98374166283939
+					epoch = 0
 				}
 				PARAM
 				{
@@ -427,74 +401,187 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = ee144d8e-387d-4369-a570-abf401ab3b97
-				type = TourismContract
+				guid = 1a7bf3e9-969a-4ace-9f70-09054610d9ba
+				type = SatelliteContract
 				prestige = 0
-				seed = -197969594
+				seed = -1615929288
 				state = Offered
-				agent = Kerbin World-Firsts Record-Keeping Society
+				agent = Rockomax Conglomerate
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,46008000,0,0,0,0,21.8,10,4648184.58020364,0,0,0
-				gender = 0
-				kerbalName = Aslotte Kerman
-				kerbalName = Leena Kerman
+				values = 57947.6882236103,41142858.6387633,33276.9217521227,89535.713523214,34607.9974670411,0,12.2896,6,3538228.05218186,0,0,0
+				targetBody = 1
+				deviation = 7
+				orbitType = 3
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = ProbeSystemsParameter
 					state = Incomplete
-					values = 19500,0,0,0,0
-					kerbalName = Aslotte Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Aslotte Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Aslotte Kerman
-					}
+					values = 0,0,0,0,0
+					hasAntenna = False
+					hasPowerGenerator = False
+					launchID = 0
 				}
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = SpecificOrbitParameter
 					state = Incomplete
-					values = 9750,0,0,0,0
-					kerbalName = Leena Kerman
+					values = 0,0,0,0,0
+					targetBody = 1
+					deviationWindow = 7
+					orbitType = 3
+					inclination = 0
+					eccentricity = 0.0794542662418848
+					sma = 14239348.055713
+					lan = 79.7084628401553
+					argumentOfPeriapsis = 202.515178274332
+					meanAnomalyAtEpoch = 2.68426347242108
+					epoch = 0
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 02d67cf3-a93e-4679-aa29-5d94b60bbb3b
+				type = DMAnomalyContract
+				prestige = 0
+				seed = -1615929286
+				state = Offered
+				agent = DMagic
+				deadlineType = Floating
+				expiryType = Floating
+				values = 232920,22635936.3510132,43680,52416,43680,0,9,10,3713200.36395825,0,0,0
+				Target_Anomaly = UFO|2|-70.96|-68.14
+				PARAM
+				{
+					name = DMCollectScience
+					id = AnomalyScience
+					state = Incomplete
+					values = 26208,0,6,0,0
+					Science_Subject = 2|Anomaly Scan|2|4|UFO|0
+				}
+				PARAM
+				{
+					name = DMCompleteParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					Parent_Parameter_Type = 3|1
 					PARAM
 					{
-						name = KerbalDestinationParameter
+						name = DMAnomalyParameter
+						id = CollectAnomalyScience
 						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Leena Kerman
+						values = 11536,0,10,0,0
+						Target_Anomaly = 16|False|Mystery Goo Observation
+					}
+					PARAM
+					{
+						name = DMAnomalyParameter
+						id = CollectAnomalyScience
+						state = Incomplete
+						values = 10976,0,4,0,0
+						Target_Anomaly = 16|False|Orbital Telescope Observations
 					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 824370ed-3bc0-4b62-8f12-6bea21e9efcf
-				type = PartTest
+				guid = bd87d618-1025-4c63-baef-e0588217e568
+				type = ISRUContract
 				prestige = 1
-				seed = -197969593
+				seed = -1615929283
 				state = Offered
 				agent = Research & Development Department
 				deadlineType = Floating
 				expiryType = Floating
-				values = 43200,46008000,135000,337500,135000,9,18,14,4669784.58020364,0,0,0
-				part = radialDrogue
+				values = 43200,322056000,425194,1083562,425194,0,60,30,3523480.36395825,0,0,0
+				targetBody = 6
+				gatherGoal = 1100
+				targetResource = Ore
+				resourceTitle = ore
+				isDelivering = True
+				deliveryBody = 7
+				deliverySituation = 5
+				PARAM
+				{
+					name = ResourceExtractionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 6
+					totalHarvested = 0
+					goalHarvested = 1100
+					resourceName = Ore
+					resourceTitle = ore
+					notifyLevel = 0.25
+				}
+				PARAM
+				{
+					name = ResourcePossessionParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					goalResource = 1100
+					resourceName = Ore
+					resourceTitle = ore
+					vesselName = vessel
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 7
+					targetSituation = 5
+					noun = Ore
+					finalObjective = False
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 7fadc853-e2bf-4d0c-a8fb-3d5d024f2463
+				type = PlantFlag
+				prestige = 1
+				seed = -1615929281
+				state = Offered
+				agent = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21176.4706134796,315741176.846981,197379.810589666,547514.442981,221375.004798174,0,17.01818,9,3501456.83457173,0,0,0
+				body = 4
+				PARAM
+				{
+					name = PlantFlag
+					state = Incomplete
+					values = 0,0,0,0,0
+					body = 4
+				}
+			}
+			CONTRACT
+			{
+				guid = 05682d49-ff36-4b7b-b0db-fcc373c63b40
+				type = PartTest
+				prestige = 1
+				seed = -1615929280
+				state = Offered
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 38571.4282035828,41078571.0368156,77586.2002372742,213362.055277002,99000.0021457672,6,13.62797,8.653847,3518851.79216183,0,0,0
+				part = nuclearEngine
 				dest = 6
-				sit = FLYING
+				sit = ORBITING
 				exp = True
 				PARAM
 				{
@@ -502,8 +589,8 @@ GAME
 					id = runTest
 					state = Incomplete
 					values = 0,0,0,0,0
-					part = radialDrogue
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					part = nuclearEngine
+					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
 					PARAM
 					{
 						name = ReachDestination
@@ -521,7 +608,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						sit = FLYING
+						sit = ORBITING
 						title = 
 					}
 					PARAM
@@ -531,144 +618,9 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						minAlt = 6000
-						maxAlt = 11000
+						minAlt = 60000
+						maxAlt = 71000
 					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						id = testSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 300
-						maxSpd = 700
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 8c219843-13d5-4b30-9caf-8a4d9cf4d72c
-				type = WorldFirstContract
-				prestige = 2
-				seed = -197969592
-				state = Offered
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = None
-				expiryType = Floating
-				values = 108000,0,97440.9426748753,256889.757961035,123750,18,45.72,0,4734584.58020364,0,0,0
-				targetBody = 3
-				targetType = LANDING
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 3
-					targetType = LANDING
-				}
-			}
-			CONTRACT
-			{
-				guid = a1cfe073-5738-4bdd-8791-c840ed054b2b
-				type = StnSciContract
-				prestige = 1
-				seed = -197969591
-				state = Offered
-				agent = Integrated Integrals
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21176.4706134796,40595294.1660404,183894.233468633,606850.983599631,309375.006705523,31,29.30909,47,4647761.05081712,0,0,0
-				targetBody = Kerbin
-				experimentType = StnSciExperiment3
-				value = 2.5
-				PARAM
-				{
-					name = StnSciParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					targetBody = Kerbin
-					experimentType = StnSciExperiment3
-					PARAM
-					{
-						name = NewPodParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-					}
-					PARAM
-					{
-						name = DoExperimentParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-					}
-					PARAM
-					{
-						name = ReturnExperimentParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = f41f042e-14a6-49cf-b603-481099d6f5ee
-				type = BaseContract
-				prestige = 1
-				seed = -196378382
-				state = Offered
-				agent = Periapsis Rocket Supplies Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,322056000,258750,654062,258750,28,26,18,4648196.25867044,0,0,0
-				targetBody = 7
-				capacity = 5
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 7
-					targetSituation = 0
-					noun = outpost
-					finalObjective = False
-				}
-				PARAM
-				{
-					name = FacilitySystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					hasAntenna = False
-					hasPowerGenerator = False
-					hasDockingPort = False
-					typeString = outpost
-					launchID = 0
-				}
-				PARAM
-				{
-					name = CrewCapacityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetCapacity = 5
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Have a research lab at the outpost
-					partNames = Large_Crewed_Lab,StnSciLab,StnSciZoo
-					moduleNames = ModuleScienceLab
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
 				}
 			}
 			CONTRACT_FINISHED
@@ -4864,7 +4816,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 309.9106
+		sci = 88.24398
 		Tech
 		{
 			id = start
@@ -6658,316 +6610,6 @@ GAME
 			sci = 0
 			cap = 19.8
 		}
-		Science
-		{
-			id = dmRadiometerScan@KerbinInSpaceLow
-			title = Irradiance Scan while in space near Kerbin
-			dsc = 4
-			scv = 1
-			sbv = 1
-			sci = 0
-			cap = 12
-		}
-		Science
-		{
-			id = dmRadiometerScan@MunInSpaceHigh
-			title = Irradiance Scan while in space high over the Mun
-			dsc = 4
-			scv = 0
-			sbv = 2
-			sci = 24
-			cap = 24
-		}
-		Science
-		{
-			id = magScan@MunInSpaceHigh
-			title = Magnetometer Scan while in space high over the Mun
-			dsc = 1
-			scv = 0
-			sbv = 2
-			sci = 10
-			cap = 10
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceHigh
-			title = Orbital Telescope Observations while in space high over the Mun
-			dsc = 3
-			scv = 0
-			sbv = 2
-			sci = 12
-			cap = 12
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceHighMidlands
-			title = Gravity Scan while in space high over the Mun's Midlands
-			dsc = 3
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 44
-		}
-		Science
-		{
-			id = temperatureScan@MunInSpaceHigh
-			title = Temperature Scan while in space high over the Mun
-			dsc = 1
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 16
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceHighNorthwestCrater
-			title = Gravity Scan while in space high over the Mun's Northwest Crater
-			dsc = 3
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 44
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceHighHighlandCraters
-			title = Gravity Scan while in space high over the Mun's Highland Craters
-			dsc = 3
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 44
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceHighHighlands
-			title = Gravity Scan while in space high over the Mun's Highlands
-			dsc = 3
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 44
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceHighPoles
-			title = Gravity Scan while in space high over the Mun's Poles
-			dsc = 3
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 44
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceHighPolarLowlands
-			title = Gravity Scan while in space high over the Mun's Polar Lowlands
-			dsc = 3
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 44
-		}
-		Science
-		{
-			id = SCANsatAltimetryHiRes@MunInSpaceHighsurface
-			title = High Resolution Altimetry Scan of the Mun
-			dsc = 3
-			scv = 0
-			sbv = 2
-			sci = 40
-			cap = 40
-		}
-		Science
-		{
-			id = magScan@MunInSpaceLow
-			title = Magnetometer Scan while in space near the Mun
-			dsc = 1
-			scv = 0
-			sbv = 3
-			sci = 15
-			cap = 15
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceLowHighlands
-			title = Orbital Telescope Observations from space just above the Mun's Highlands
-			dsc = 3
-			scv = 0
-			sbv = 3
-			sci = 18
-			cap = 18
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceLowHighlandCraters
-			title = Orbital Telescope Observations from space just above the Mun's Highland Craters
-			dsc = 3
-			scv = 0
-			sbv = 3
-			sci = 18
-			cap = 18
-		}
-		Science
-		{
-			id = AnomalyScan@MunInSpaceHigh
-			title = Anomaly Scan while in space high over the Mun
-			dsc = 4
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 32
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceLowMidlands
-			title = Orbital Telescope Observations from space just above the Mun's Midlands
-			dsc = 3
-			scv = 0
-			sbv = 3
-			sci = 18
-			cap = 18
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceLowPoles
-			title = Orbital Telescope Observations from space just above the Mun's Poles
-			dsc = 3
-			scv = 0
-			sbv = 3
-			sci = 18
-			cap = 18
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceLowPolarLowlands
-			title = Orbital Telescope Observations from space just above the Mun's Polar Lowlands
-			dsc = 3
-			scv = 0
-			sbv = 3
-			sci = 18
-			cap = 18
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceLowEastCrater
-			title = Orbital Telescope Observations from space just above the Mun's East Crater
-			dsc = 3
-			scv = 0
-			sbv = 3
-			sci = 18
-			cap = 18
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceHighEastCrater
-			title = Gravity Scan while in space high over the Mun's East Crater
-			dsc = 3
-			scv = 1
-			sbv = 2
-			sci = 0
-			cap = 44
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceLowEastCrater
-			title = Gravity Scan from space just above the Mun's East Crater
-			dsc = 3
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 66
-		}
-		Science
-		{
-			id = temperatureScan@MunInSpaceLow
-			title = Temperature Scan while in space near the Mun
-			dsc = 1
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 24
-		}
-		Science
-		{
-			id = AnomalyScan@MunInSpaceLow
-			title = Anomaly Scan while in space near the Mun
-			dsc = 4
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 48
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceLowPolarLowlands
-			title = Gravity Scan from space just above the Mun's Polar Lowlands
-			dsc = 3
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 66
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceLowPoles
-			title = Gravity Scan from space just above the Mun's Poles
-			dsc = 3
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 66
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceLowHighlands
-			title = Gravity Scan from space just above the Mun's Highlands
-			dsc = 3
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 66
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceLowHighlandCraters
-			title = Gravity Scan from space just above the Mun's Highland Craters
-			dsc = 3
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 66
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceLowMidlands
-			title = Gravity Scan from space just above the Mun's Midlands
-			dsc = 3
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 66
-		}
-		Science
-		{
-			id = scopeScan@MunInSpaceLowMidlandCraters
-			title = Orbital Telescope Observations from space just above the Mun's Midland Craters
-			dsc = 3
-			scv = 0.2962963
-			sbv = 3
-			sci = 12.66667
-			cap = 18
-		}
-		Science
-		{
-			id = gravityScan@MunInSpaceLowMidlandCraters
-			title = Gravity Scan from space just above the Mun's Midland Craters
-			dsc = 3
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 66
-		}
 	}
 	SCENARIO
 	{
@@ -7153,7 +6795,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 1031572926
+		lastSeed = 1816441579
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -7328,19 +6970,19 @@ GAME
 		scene = 7, 8, 5
 		CONTRACT
 		{
-			guid = 61acffa5-e846-409c-b758-d91e308b5818
+			guid = 276f34f2-39fc-4990-8c76-41a5bb5ce80c
 			type = ConfiguredContract
 			prestige = 0
-			seed = 23140910
+			seed = 506284695
 			state = Withdrawn
 			agent = Research & Development Department
 			deadlineType = None
 			expiryType = Floating
-			values = 113100,0,25197,50395,31497,0,10,16,4734634.15648242,0,0,0
+			values = 148800,0,32995,65989,41243,0,7,10,3588779.83630082,0,0,0
 			subtype = RT_OtherPlanetsDish
-			title = RemoteTech: Point some dishes at Eve
-			description = Recently we have begun the study of Eve. But is very hard to track from the space center. We'd like you to point a satellite at it. That way we can send probes to Eve someday!
-			synopsis = Point a dish at Eve!
+			title = RemoteTech: Point some dishes at Dres
+			description = Recently we have begun the study of Dres. But is very hard to track from the space center. We'd like you to point a satellite at it. That way we can send probes to Dres someday!
+			synopsis = Point a dish at Dres!
 			completedMessage = We've got a signal bouncing back, good job!
 			notes = 
 			hash = -1955509974
@@ -7424,12 +7066,12 @@ GAME
 					disableOnStateChange = False
 					values = 0,0,0,0,0
 					ContractIdentifier = RT_OtherPlanetsDish
-					title = Point a Dish at at Eve
+					title = Point a Dish at at Dres
 					notes = 
 					completedMessage = 
 					allowStateReset = True
 					minRange = 0
-					targetBody = Eve
+					targetBody = Dres
 					activeVessel = False
 					minCount = 1
 					maxCount = 2147483647
@@ -7449,12 +7091,12 @@ GAME
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Target: Eve
+						id = Target: Dres
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = RT_OtherPlanetsDish
-						title = Target: Eve
+						title = Target: Dres
 						notes = 
 						completedMessage = 
 					}
@@ -7485,12 +7127,12 @@ GAME
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Range: In range of Eve
+						id = Range: In range of Dres
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = RT_OtherPlanetsDish
-						title = Range: In range of Eve
+						title = Range: In range of Dres
 						notes = 
 						completedMessage = 
 					}
@@ -7513,13 +7155,13 @@ GAME
 				id = CelestialBodyCoverage
 				state = Incomplete
 				disableOnStateChange = False
-				values = 83991,0,0,17,0
+				values = 131978,0,0,13,0
 				ContractIdentifier = RT_OtherPlanetsDish
 				title = 
 				notes = 
 				completedMessage = 
 				coverage = 0.2
-				targetBody = Eve
+				targetBody = Dres
 			}
 			PARAM
 			{
@@ -7540,25 +7182,25 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 8f6b9615-4963-4ec9-ad45-ffb0ab485003
+			guid = a2011462-1fcf-42a5-97bf-878e8cb1d0f1
 			type = ConfiguredContract
-			prestige = 0
-			seed = 1014352683
+			prestige = 1
+			seed = 1480575041
 			state = Withdrawn
 			agent = SCAN: Scientific Committee on Advanced Navigation
 			deadlineType = Floating
 			expiryType = Floating
-			values = 83760,18377995.6054688,23498,128857,23498,0,2,2,4734634.19648242,0,0,0
-			subtype = SCAN_M700
-			title = Scan Minmus for resources
-			description = The amount of times there would be a somewhat worse-than-average accident was making the outstanding minds trying something positively awesome at SCAN: Scientific Committee on Advanced Navigation feel really brilliant. That (eventually) made it clear that we weren't making any progress at all towards learning if brave Kerbals regain their nerve faster than not-so-brave ones. So, as a result of that apparently incredible chain of events, this is why we're here.
-			synopsis = Scan Minmus with the M700 Scanner
-			completedMessage = Look at all those lovely resources. We'll have to get a survey team together!
+			values = 39420,21241162.3535156,35038,197507,35038,0,2,2,3588325.77626051,0,0,0
+			subtype = SCAN_HiRes
+			title = Do a High Resolution Scan of the Mun
+			description = It seemed pretty for the decent geniuses at SCAN: Scientific Committee on Advanced Navigation's labs, trying to reproduce an experiment about whether some Kerbals seem to enjoy things that terrify others, that we knew very little about whether all Kerbals enjoy feeling weightless. It is true, though, that the amount of times there would be a somewhat worse-than-average accident was quite definitely part of the reason. This is why we're here.
+			synopsis = Perform a SAR scan of the Mun
+			completedMessage = HD Imaging is a wonderful thing. We now have a detailed map of the Mun
 			notes = Scanning can take place while the vessel is not loaded.
-			hash = 1974307365
+			hash = 1609841145
 			UNIQUE_DATA
 			{
-				targetBody4 = CelestialBody:Minmus
+				targetBody3 = CelestialBody:Mun
 			}
 			PARAM
 			{
@@ -7566,14 +7208,14 @@ GAME
 				id = SCANsatCoverage
 				state = Incomplete
 				values = 0,0,0,0,0
-				ContractIdentifier = SCAN_M700
+				ContractIdentifier = SCAN_HiRes
 				title = 
 				notes = 
 				completedMessage = 
-				coverage = 75
-				scanName = FuzzyResources
-				scanType = 524288
-				targetBody = Minmus
+				coverage = 85
+				scanName = AltimetryHiRes
+				scanType = 2
+				targetBody = Mun
 			}
 		}
 		CONTRACT
@@ -8532,7 +8174,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 111260
+		nextCheck = 108296
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -8549,12 +8191,12 @@ GAME
 		{
 			body = Mun
 			coverage = 1048575
-			activeRange = 5000000
+			activeRange = 3000
 		}
 		CelestialBodyInfo
 		{
 			body = Minmus
-			coverage = 1044415
+			coverage = 1048575
 			activeRange = 5000000
 		}
 		CelestialBodyInfo
@@ -8723,35 +8365,6 @@ GAME
 					best_alt = 0
 				}
 			}
-			Vessel
-			{
-				guid = f9f82358-d0e7-4ea6-91ce-ed98b4406aca
-				name = Miracle 3
-				Sensor
-				{
-					type = 2
-					fov = 2
-					min_alt = 5000
-					max_alt = 800000
-					best_alt = 750000
-				}
-				Sensor
-				{
-					type = 32
-					fov = 1
-					min_alt = 0
-					max_alt = 2000
-					best_alt = 0
-				}
-				Sensor
-				{
-					type = 1
-					fov = 5
-					min_alt = 5000
-					max_alt = 500000
-					best_alt = 5000
-				}
-			}
 		}
 		Progress
 		{
@@ -8778,7 +8391,7 @@ GAME
 				PaletteSize = 9
 				PaletteReverse = False
 				PaletteDiscrete = False
-				Map = CAABAAAA-----0AHQAAAD0AICID0AwACAwAAAOD-A+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+GLBwIBAADgjJfhiyvg-5Ph-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfhVwcCAQAA4Fhj4FfD4P9f4fsH4v-P4vsL4b8D4v-T4b-P4P-H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4X4HAQAL
+				Map = CAABAAAA-----0AHQAAAD0AICID0AwACAwAAAOD-A+FrB0GIQAPga3vg-3Ph-wfhOwfi-8vhO0vg-0Phcwfi-8-hc4Pg-3vhOwfi-8-hO0vg-0Ph-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh8wcCAQAA4PT-4fP74Mv74v-P4R-b4V8v4F9n4B-34J8nQTdAA+Cfr+B3p+FfK+BbZ+BbY+Fnr+Bj0+BPa+BPV+Fni+ADb+Bb0+BbY+AD0+DHC+FPP+BPV+EHf+BjZ+Bja+AH5+D-D+EXB+FPo+BPV+AHz+BjZ+Bja+AH5+D-D+FvB0H7QAPgb3-gs3fh-zfhh8Ph-5fhh5fg-4-hJwfi-8-hJzfg-y-hhwdCz0AD4IeX4P+P4f8H4SMH4v-P4SMz4P8r4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4c8HAgEAAODQ2+HPs+Cv1+Jba+BbY+Gvf+D-t+E7B0JnQAPgO0vg-0Ph-wfhCwfiV2tAX0AD4At74EcT4Fdn4FdfwQ-gx2fA1+BXB0E3QAPgw2fgV8vgW1-hw5PhWy-AY+FbN8Br4LcH4V8rQGdAA+FbL0BnQAPgW2vgw2PhYzPgY2vhS6NAv0AD4Etb4AdT4F9n4Ad34P8P4RsH4bejQL9AA+Ab6+A3I+BfZ+A3p+D-P+GrB+JjY+Bja+Gri+D-s+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+EnBwIBAADgKDPgJ2Pg-y-h-wfhUwfiX8-gX2fhUyvg-1vhkwfiX2fgX2fhk2vg95viWwNAY0AD4fdr4P--4VMHQmdAA+C3Y+BTv+BrW+FXk0DT4FtjQGfgXwNAz8AD4F9z4P9n4RcHQZfgFyPgNx9AY0AD4DdH4H8-QMvAA+BXk+BfZ+BXx+BfX+FbL+BbY+FfL8Bn4F-T4F9nwNfgswfBK0AH4FPHQF9AA+BTY+BnW+DHz+FnP+BLb0GTQAPgS1vgA1NAY0AD4AMT4LcL4MfP4bePwL-hX5fgX2fA1+D-B+HnB+JfZ+BfZ+Hnv+D-7+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+FHBwEBAIAD4EdX4AdPQGfgBxPgSw-gX2fgS7vg11PhW5tAY0AD4VdL4FtjQMPgX2dAa+D-A+EfB0GbQAPgHy-gJydAW8AD4Cc74I8vQM-gj5vg95dBm0AD4U8HQFvgAwPgT2fg-1fhJwdBm+AnM+CPL0DLwAPgU6PAY0AH4FNn4P9b4SMHQZNAA+AjM+CTK0DLQAPgV6PgW2PgV8Pgy19Bl0AD4L-bQMtAA+BXz0BjQAPgV2fg-1-hGwdBj8AD4Bsv4JsjQM-gW6fgX2fgW8vgv2NBk8AD4L-T4F-HQTfgX2vg-2fhGwfh-5fhGyvg-yPhkwfi-8-hk6Pg-5vh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfhQwcBAQCAA+BDU+ALS0Bn4AsX4K8T4L-P4L-HwkdAz0ADwA-gTwfgW2NAu+D-Z0EL4BsD4V8v4BuL4DsjQM9AA+A7S+ATQ+BfY+BbZ0Dn4FtnQGNAA0Bv4E8D4Fdf4E+34AtXQMvgAwPgCyPgOxNAY+A7R+CDQ0DTQAPgU5NAX0AD4E9jQFvAA+BPY+BnV0DP4Gdz4P9v4RsHQZ9AA+AbK+AnI0BXwAPgJzvgjy-Az0AH4I+j4POXQZdAA+FLA0BXwAPgS1-ga1PAz0AH4Gt-4P9z4Q8H4VOXQFvgAwPgD4PgpxfA0+Cnt+Dbr0Gb4FPnQF-AA+BTZ+BjW0DP4GNv4P9r4RsH4VebQF9AA+Abi+CfI+DHz+Gfd+B7p0H7QAPge4vg-4Ph-wfhKwdCy0AD4Cs74P8z4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4f8H4cMHAgEAAODEz+Ffm+FbN+BbY0Ev4F9nQGvgVwPgw8vhVyvAX+FfM+D-Z8F34P8H4UcH4v9n4SdX4V834CeX4PMv4V+TQGdAA+Fba+DHZ+FbM+C-Y+Fj++Bja+Ffn+Bf0+Bfz+D-Z+GDB+JjY+Bja+GDY+D-i+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+EDBwIBAADgBA-gAxvg-wvh1wfiXwPgW2fgW2Pi1w-gT99Bm0AD4E9fwFfgW2NAa+BbZ0BjQANAb+BPA+BXX+BPt+B3V+FfN0BnQAPgU+9AX0AD4FNjwFvgV2fgV1-Ax+DHB+FbN0BjwAPhVz9AZ+BXY0Bf4F9nQGvg-wPhFwdBk0AD4Bcn4DcfQGPAA+A3S+AXP+BfZ0CHQGtAB+BHA+BPV+BHp+DzT+Ffo0BnQAPhW2vgT2fgT1fhWxPg32PhY6PgX2vgX2fi3yPg-+fhbwfi-8-hb3-g-3fh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfhqwcCAQAA4Fy34F9n4auD4P+z4TsH4l9n4F9n4TsT4OdD4V+b4Ftn4FtjQh-gX2dAa+D-A+EfB0GbQAPgHy-gLyfgX2PgW2fhLwPg-zfhUwdB-0AD4LdjQL9Ax0ADQAvg-wPh4wdB+8AD4FP3wGNAB+BTZ0Bb4FtjQGfg-wPhgwdB+0AD4FuTQGdAA+BXa0BjQAPgV2fg-1-hgwdB90AD4FuTQGdAA+BXa0BjQAPgV2fg-1-h7wfiY2PgY2vh78-g9-fiY2PgY2vh99fg---h-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfBBwIBAADgAAvAE+D-B+F7B+HDn+Bby+BbY0IX4F9nQGvgwwPhwzfgW8tAY0AD4lcD4Ftj4FfD4P9f4S8HQgNAA+AvP+AXN0BbwAPgFyvg-x-h-wfhJwfCZ0AH4Cc74B8vQFvAA+AfM+D-J+H-B+EfB8JnQAfgHzPgJydAW+ADA+AnP+D-L+H-B+ETB+JfZ+BfZ+AT6+D-G+HTB+JfZ+BfZ+HTq+D-2+ETB+JjZ8Br4BOP4P8b4f8H4SsHQmfgKzfgJzPgX2fgJ5fg-y-hvwfiX2fgX2fhv5fg-8fh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfhfwcCAQAA4ICL4TMT4F-H4F9n4TML4PM74b+fQMdAA+FXy+BbY0DD4F9nQGvgWwPgx8-hVzNBL0AD4Ftn4FdjQF-gW8tAZ+D-A+GDB0H7wAPgU5dAY+BTX+ADW+Bja+ADd+D-C+FzB0H74AMD4HOL4D97QM-gP0vg-0fhnwdB++ADA+Cft+D-p+H-B+EDB+L-z+EDE+D-C+GrB+L-z+FCuwEACw__
 			}
 			Body
 			{
@@ -8789,18 +8402,6 @@ GAME
 				PaletteName = RdGy
 				PaletteSize = 11
 				PaletteReverse = True
-				PaletteDiscrete = False
-				Map = CAABAAAA-----0AHQAAAD0AICID0AwACAwAAAOAPAwECAOD-A+H-B+FxB+IPo+ADF0Cf4AMP4AcLQB-g-wPh-wfhbwfiB5vgCw9Am+ALF8ATQB-g-wPh-wfhbwfCk+ATB0Cb4BcfQCPg-wPh-wfhawfiE6fAG0CXwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhbwfiA5fgDwtAm+APG0AXQB-g-wPh-wfhbwdCj+AXA0Cb4BMjQB-g-wPh-wfhbwfiE6fAG0CbwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhbwfiA5fgDwtAm+APG0AXQB-g-wPh-wfhbwdCj+AXA0Cb4BMjQB-g-wPh-wfhbwfiE6fAG0CbwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhbwfiA5fgDwtAm+APG0AXQB-g-wPh-wfhbwdCj+AXA0Cb4BMjQB-g-wPh-wfhbwfiE6fAG0CbwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhbwfiA5fgDwtAm+APG0AXQB-g-wPh-wfhbwdCj+AXA0Cb4BMjQB-g-wPh-wfhbwfiE6fAG0CbwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhbwfiA5fgDwtAm+APG0AXQB-g-wPh-wfhbwdCj+AXA0Cb4BMjQB-g-wPh-wfhbwfiE6fAG0CbwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhbwfiA5fgDwtAm+APG0AXQB-g-wPh-wfhbwdCj+AXA0Cb4BMjQB-g-wPh-wfhbwfiE6fAG0CbwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhbwfiA5fgDwtAm+APG0AXQB-g-wPh-wfhbwdCj+AXA0Cb4BMjQB-g-wPh-wfhbwfiE6fAG0CbwAvgCwdAH+D-A+H-B+FvB+ILn+AHE0Cb4AcT4AMPQB-g-wPh-wfhawfiA5PgEwtAm+AXH0Aj4P8D4f8H4WcH4hOj4AMbQJfgAw-gBwtAH+D-A+H-B+FrB+IHl+APD0Cb4A8bQBdAH+D-A+H-B+FrB0KL4BsDQJvgEydAH+D-A+H-B+FrB+ITo+ADG0Cb4AMP4AcLQB-g-wPh-wfhawfiB5fgDw9Am+APG0AXQB-g-wPh-wfhawdCi+AbA0Cb4BMnQB-g-wPh-wfhawfiE6PgAxtAm+ADD+AHC0Af4P8D4f8H4WsH4geX4A8PQJvgDxtAF0Af4P8D4f8H4WsHQovgGwNAm+ATJ0Af4P8D4f8H4WsH4hOj4AMbQJvgAw-gBwtAH+D-A+H-B+FrB+IHl+APD0Cb4A8bQBdAH+D-A+H-B+FrB0KL4BsDQJvgEydAH+D-A+H-B+FnB+ITn+AHG0Cb4AcT4AMPQB-g-wPh-wfhZwfiA4-gFwtAm+ATI0Af4P8D4f8H4WcH4hOf4AcbQJvgBxPgAw9AH+D-A+H-B+FnB+IDj+AXC0Cb4BMjQB-g-wPh-wfhZwfiE5-gBxtAm+AHE+ADD0Af4P8D4f8H4WcH4gOP4BcLQJvgEyNAH+D-A+H-B+FjB+ITm+ALG0Cb4AsXQBNAG+D-A+H-B+FnB0KH4CMDQJ-gDy9AG+D-A+H-B+FnB+IPm+APF0Cf4BMbQB-g-wPh-wfhXwfiD5fgExdAm+APH0Ab4P8D4f8H4WMH4g+X4BMXQJ-gDx9AG+D-A+H-B+FjB+IPl+ATF0Cf4A8fQBvg-wPh-wfhXwfiD5PgFxdAn+API0Ab4P8D4f8H4V8H4g+T4BcXQJ-gDyNAG+D-A+H-B+FbB+IPj+AbF0Cf4A8nQBvg-wPh-wfhVwfiD4vgHxdAn+APK0Ab4P8D4f8H4U8H4g+D4CcXQJ-gDzNAG+D-A+H-B+FLB+IPf+ArF0Cf4A83QBvg-wPh-wfhQwfiD3fgMxdAn+APP0Ab4P8D4f8H4TcH4g9r4D8XQJ-gD0tAG+D-A+H-B+EnB+IPW+BPF0Cf4AtbQBfg-wPh-wfhDwfiCz-gbxNAo+ALe0AX4P8D4e8H4gsX4JcTQavgC6NAF+D-A+GvB+EL1+DXE0Gr4AvjQBfg-wPhXwfhC4fg-xPhHwdBq+ALK0AX4P8D4QcH4Qsv4P8T4XcHQavgC4NAF+C3A+AL1+D-E+HPB0Kz4AfbQBPgcwPgB4-g-w-h-wfhEwdCt+AHH0AT4D8D4Adb4P8P4f8H4UcHQrfgB1NAE+AfA+AHO+D-D+H-B+FnB0K34ANzQA-gEwPgAyvg-wvh-wfhewdCu+ADh0AP4AMD4AMb4P8L4f8H4ZsHwsvgm6vg-6Ph-wfhBwdCy+AHE+D-D+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+H-B+EjB1sP4BcD4CNP4P8r4f8H4Q8H4hdz4FMf4A+T4P8X4dcH4lNb4Gtb4dev4M-f4msr4Jtz4c-v4KPX4psn4J+j4aP34AurwWfgCxvgfxPAo+D-B+FTB+F-8+Afh+EPC+AfP+BXJ+APn+D-F+FXB+FX3+A3X+Ab-+A3Y+A3P+Abo+D-I+FXB+E3y+A7P+A34+A7g+ArQ+A3t+D-P+FDB+Erx+AvM+BDt+ADS+Avj+ArN+ADd+D-C+GDB+Er0+AXM+Bn3+AXj+A-H+Bn1+D-b+HnB+I-r+ATR+HnU+D-7+FrB+ITh+A7G+Br0+D-c+HrB+I7s+ATQ+HrU+D-8+FrB+ITi+A7G+Br0+D-c+HrB+I7s+APQ+HrT+D-8+FvB+IPi+A3F+Bvz+D-d+HvB+I3t+APP+HvT+D-9+FvB+IPj+A3F+Bvz+D-d+HvB+I3t+APP+HvT+D-9+FvB+IPj+AzF+Bvy+D-d+HvB+Izs+ATO+HvT+D-9+FvB+ITk+AzG+Bvz+D-d+HvB+Izs+ATO+HvT+D-9+FvB+ITk+AzG+Bvz+D-d+HvB+Izs+ATO+HvT+D-9+FvB+ITk+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+ArG+Bvx+D-d+H3B+Irs+ATM+H3T+D--+FvB+ITm+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AvG+Bvy+D-d+HzB+Ivs+ATN+HzT+D-++FvB+ITl+AzG+Bvz+D-d+HvB+Izs+ATO+HvT+D-9+FvB+ITk+AzG+Bvz+D-d+HvB+Izs+ATO+HvT+D-9+FvB+ITk+AzG+Bvz+D-d+HvB+Izs+ATO+HvT+D-9+FvB+ITk+A3G+Bv0+D-d+HrB+I3s+ATP+HrT+D-8+FzB+ITk+AzG+Bz0+D-e+HrB+Izs+ATO+HrS+D-8+FzB+ITk+A3G+Bz1+D-e+HnB+I3s+ATP+HnS+D-7+FzB+ITj+A7G+Bz2+D-e+HjB+I7s+ATQ+HjS+D-6+FzB+ITi+A-G+Bz3+D-e+HfB+I-s+AXR+HfT+D-5+FvB+IXh+BDH+Bv4+D-d+HbB+JDr+AbS+HbU+Af4+EbL+AjI+Afd+DTJ+EjL+BHK+HTV+Ab2+FHT+BLT+Abx+CDI+FLA+AnU+GDD+Bji+EnJ+CvL+H7U+FjA+Bva+Kvn+BXt+Ezj+BXm+BLX+Az7+CDO+FLG+DfU+ETx+HPA+AT8+B7G+HPd+Bv18HT4G9-4JN3wRvgUwfgk--g-5vh-wfhDwfjAx-gDyPg-xfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfh-wfhKwcCAQAA4Cw34CtrQDPdp0AL4P8D4f8H4a8HwtNAB+Cvw+D-t+H-B0LL4AMD4f8X4f8H4acH4gPL4A8L4KfT4P+v4dcHQq-gB+NAE+AzA+AHT+D-D+H-B+FTB0K34AdfQBPgWwPgB3fg-w-h-wfhKwdCt+AHN0AT4JsD4Ae34P8P4fMHQrfgC-9AF+DrA+ELC+D-E+GbB0Kz4AunQBfg-wPhOwfhC2Pg-xPhQwdBq+ALT0AX4P8D4ZsH4QvD4OsTQavgC-dAF+D-A+HjB+ILC+CjE0Gr4AuvQBfg-wPh-wfhCwfiCzvgcxNAo+APf0Ab4P8D4f8H4SMH4g9X4FMXQJ-gD19AG+D-A+H-B+E3B+IPa+A-F0Cf4A9LQBvg-wPh-wfhQwfiD3fgMxdAn+APP0Ab4P8D4f8H4UsH4g9-4CsXQJ-gDzdAG+D-A+H-B+FTB+IPh+AjF0Cf4A8vQBvg-wPh-wfhUwfiD4fgIxdAn+APL0Ab4P8D4f8H4VsH4g+P4BsXQJ-gDydAG+D-A+H-B+FbB+IPj+AbF0Cf4A8nQBvg-wPh-wfhXwfiD5PgFxdAn+API0Ab4P8D4f8H4WMH4g+X4BMXQJ-gDx9AG+D-A+H-B+FjB+IPl+ATF0Cf4A8fQBvg-wPh-wfhYwfiD5fgExdAn+APH0Ab4P8D4f8H4WcH4g+b4A8XQJ-gExtAH+D-A+H-B+FjB+IPm+APF0Cb4BMbQB-g-wPh-wfhZwfiD5-gCxdAm+ALF8ATQB-g-wPh-wfhZwfCi+AbB0Cb4BMnQB-g-wPh-wfhZwfiE5-gBxtAm+AHE+ADD0Af4P8D4f8H4WcH4gOP4BcLQJvgEyNAH+D-A+H-B+FnB+ITn+AHG0Cb4AcT4AMPQB-g-wPh-wfhZwfiA4-gFwtAm+ATI0Af4P8D4f8H4WcH4hOf4AcbQJvgBxPgAw9AH+D-A+H-B+FrB+IDk+ATC0Cb4BcfQCPg-wPh-wfhZwfiE6PgAxtAl+ADD+AHC0Af4P8D4f8H4WsH4geX4A8PQJvgDxtAF0Af4P8D4f8H4WsHQovgGwNAm+ATJ0Af4P8D4f8H4WsH4hOj4AMbQJvgAw-gBwtAH+D-A+H-B+FrB+IHl+APD0Cb4A8bQBdAH+D-A+H-B+FrB0KL4BsDQJvgEydAH+D-A+H-B+FrB+ITo+ADG0Cb4AMP4AcLQB-g-wPh-wfhawfiB5fgDw9Am+APG0AXQB-g-wPh-wfhawdCi+AbA0Cb4BMnQB-g-wPh-wfhawfiE6PgAxtAm+ADD+AHC0Af4P8D4f8H4WsH4geX4A8PQJvgDxtAF0Af4P8D4f8H4WsHQovgGwNAm+ATJ0Af4P8D4f8H4WsH4hOj4AMbQJvgAw-gBwtAH+D-A+H-B+FvB+IHm+ALD0Cb4AsXwBNAH+D-A+H-B+FvB8KT4BMHQJvgFx9AI+D-A+H-B+FrB+ITp8AbQJfAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+D-A+H-B+FvB+IDl+APC0Cb4A8bQBdAH+D-A+H-B+FvB0KP4BcDQJvgEyNAH+D-A+H-B+FvB+ITp8AbQJvAC+ALB0Af4P8D4f8H4W8H4guf4AcTQJvgBxPgAw9AH+A7A8AA4DtL4P9D4ecH4gOX4A8LQRPgDxtAF0Af4P8D4f8H4W8HQo-gFwNAm+ATI0Af4P8D4f8H4W8H4hOnwBtAm8AL4AsHQB-g-wPh-wfhbwfiC5-gBxNAm+AHE+ADD0Af4P8D4f8H4W8H4gOX4A8LQJvgDxtAF0Af4P8D4f8H4W8HQo-gFwNAm+ATI0Af4P8D4f8H4W8H4hOnwBtAm8AL4AsHQB-g-wPh-wfhbwfiC5-gBxMgmwEACw__
-			}
-			Body
-			{
-				Name = Sun
-				Disabled = False
-				MinHeightRange = 0
-				MaxHeightRange = 1000
-				PaletteName = Default
-				PaletteSize = 7
-				PaletteReverse = False
 				PaletteDiscrete = False
 				Map = CAABAAAA-----0AHQAAAD0AIBYD0AwACAOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AOD-AODNAAEACw__
 			}
@@ -14760,8 +14361,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 4643342.05205584
-		activeVessel = 0
+		UT = 3482745.56622771
+		activeVessel = 33
 		mapViewFiltering = -1026
 		VESSEL
 		{
@@ -92481,6 +92082,580 @@ GAME
 		}
 		VESSEL
 		{
+			pid = d5d0cb8650a64d608446142f6a51f547
+			name = Ast. AVG-453
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 2088150.72173916
+			lct = 2088150.72173916
+			root = 0
+			lat = 0.840656353273238
+			lon = -37.7256234992597
+			alt = 13711573408.3763
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.6201084,-0.3943389,0.6180826,0.2791708
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13912597239.7634
+				ECC = 0.0240415633880977
+				INC = 0.87504792459069
+				LPE = 175.669761176471
+				LAN = -171.481970607795
+				MNA = 6.03424545873616
+				EPH = 4331739.32037197
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1116614884
+				mid = 1116614884
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 2088150.72173916
+				lifetime = 1665448.95629883
+				refTime = 1728000
+				size = 1
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = c835689e2c464a05aef68fae439b1da5
+			name = Ast. GPT-574
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 2194772.81422009
+			lct = 2194772.81422009
+			root = 0
+			lat = -0.354598743216046
+			lon = -104.000040207567
+			alt = 16087335254.9483
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.06397888,0.379921,0.8874398,0.2530165
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15000565872.0528
+				ECC = 0.102865050474602
+				INC = 0.821012753483245
+				LPE = 359.246338559839
+				LAN = 79.3903742128689
+				MNA = 5.9089725592142
+				EPH = 5944103.49048962
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 931727031
+				mid = 931727031
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 2194772.81422009
+				lifetime = 1513998.96240234
+				refTime = 1728000
+				size = 1
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = bfc65c014d784670abb1ffd09d9ce7f7
+			name = Ast. XWZ-258
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 2812216.08457179
+			lct = 2812216.08457179
+			root = 0
+			lat = 0.0277763785900167
+			lon = 130.384343325937
+			alt = 15614866914.0148
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.5098715,-0.189504,-0.2361201,0.8052121
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14679131863.1911
+				ECC = 0.0816786354923179
+				INC = 0.102463707001103
+				LPE = 198.487470884077
+				LAN = -61.8310818042324
+				MNA = 5.86730148183612
+				EPH = 7382231.73398586
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 230032009
+				mid = 230032009
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 2812216.08457179
+				lifetime = 1156183.95080566
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = f20c701d001f4802a23f522f5563b77a
+			name = Ast. YWO-268
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 3134277.41129632
+			lct = 3134277.41129632
+			root = 0
+			lat = -1.09710365579506
+			lon = 217.981603952267
+			alt = 15210363749.5845
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.6598657,-0.5181129,-0.1933353,0.5086823
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14918358727.7335
+				ECC = 0.0892522355639385
+				INC = 1.19025938214603
+				LPE = 6.32336704421695
+				LAN = 62.7013440846647
+				MNA = 6.25694162436603
+				EPH = 6318606.06119866
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1660261197
+				mid = 1660261197
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3134277.41129632
+				lifetime = 1449488.17749023
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 0cefc09555c94e91be7ce9c916d6455e
+			name = Ast. FEM-524
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 3139877.41129632
+			lct = 3139877.41129632
+			root = 0
+			lat = 0.426680888408268
+			lon = 215.925676018002
+			alt = 15753640526.1909
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.5571906,0.4394617,0.2631395,0.6535821
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15334906678.9444
+				ECC = 0.11577523921381
+				INC = 0.467324760910656
+				LPE = 184.467938962435
+				LAN = 246.563359285409
+				MNA = 6.05264862358415
+				EPH = 5992679.87711663
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1575971750
+				mid = 1575971750
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3139877.41129632
+				lifetime = 565332.316589355
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 88f4c2a1ab33465b8c5898b9538b8677
+			name = Ast. FRR-941
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 3192764.40551149
+			lct = 3192764.40551149
+			root = 0
+			lat = 1.28466009866188
+			lon = 164.632246439006
+			alt = 14198751013.4825
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.4496128,0.8002419,0.1919597,0.3472933
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14757401419.3721
+				ECC = 0.0765979370768947
+				INC = 1.29093947269352
+				LPE = 174.699486545095
+				LAN = 209.61477145646
+				MNA = 0.066934870183186
+				EPH = 5341762.53173219
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 866288339
+				mid = 866288339
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3192764.40551149
+				lifetime = 1120202.05078125
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 0d725a215863423ca45ae4b8f46275cb
+			name = Ast. TYI-606
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 3240879.43786012
+			lct = 3240879.43786012
+			root = 0
+			lat = 0.542152238895215
+			lon = 125.352562524873
+			alt = 13407871543.3787
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.7428473,0.2787735,-0.5409006,0.2790875
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13906054832.2913
+				ECC = 0.023950710802841
+				INC = 0.650836005363704
+				LPE = 169.302670154526
+				LAN = 182.49337567518
+				MNA = 0.564625963976727
+				EPH = 5253086.24328004
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1816441579
+				mid = 1816441579
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 3240879.43786012
+				lifetime = 764281.439208984
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
 			pid = f9f82358d0e74ea691ceed98b4406aca
 			name = Miracle 3
 			type = Probe
@@ -92488,33 +92663,33 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 1162296.57334583
+			met = 1702.72751764627
 			lct = 3481042.83871007
 			root = 0
-			lat = 6.22940499817265
-			lon = 435.945424530942
-			alt = 47213.2150583756
+			lat = -0.0118794136827914
+			lon = 192.17686444023
+			alt = 93367.4706205009
 			hgt = -1
-			nrm = 0.2794901,-0.914676,-0.2919819
-			rot = -0.8356556,0.2493123,-0.2283758,0.4328599
-			CoM = -0.0004545253,-6.849401,0.001542717
+			nrm = -0.4931283,0.06873668,-0.8672369
+			rot = 0.5845235,-0.3105074,0.3987764,-0.6347401
+			CoM = -5.611325E-05,-7.265989,0.0008708697
 			stg = 1
 			prst = False
 			ref = 2163231469
 			ctrl = True
-			cPch = 
-			cHdg = 
+			cPch = 0.2573427
+			cHdg = -1.643617
 			cMod = 0
 			ORBIT
 			{
-				SMA = 250644.175697791
-				ECC = 0.0146907090835806
-				INC = 91.2143543821579
-				LPE = 195.632137434114
-				LAN = 273.079696395615
-				MNA = 5.91246502088969
-				EPH = 4643339.4120559
-				REF = 2
+				SMA = 5667704.94209049
+				ECC = 0.878281259367095
+				INC = 0.0790719183180578
+				LPE = 180.212212581625
+				LAN = 179.532204340713
+				MNA = 0.00457589318131078
+				EPH = 3482745.56622771
+				REF = 1
 			}
 			PART
 			{
@@ -92538,14 +92713,14 @@ GAME
 				attN = bottom, 1
 				attN = top, -1
 				mass = 0.1
-				temp = 292.016202276997
-				tempExt = 292.073141049627
+				temp = 303.738134182391
+				tempExt = 304.047455311865
 				expt = 0
 				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/default
-				rTrf = probeCoreHex (Miracle 3)
+				rTrf = probeCoreHex
 				modCost = 0
 				EVENTS
 				{
@@ -92684,15 +92859,17 @@ GAME
 								Frame = Maneuver
 								Orientation = 0,0,0,1
 								Altitude = NaN
-								TimeStamp = 4643339.4120559
+								TimeStamp = 3482745.56622771
 								ExtraDelay = 0
 								CmdGuid = 9017dc18-690c-4a7c-999d-9a6840a58661
 							}
 							TargetCommand
 							{
-								TimeStamp = 4643339.4120559
+								TargetType = CelestialBody
+								TargetId = 2
+								TimeStamp = 3482745.56622771
 								ExtraDelay = 0
-								CmdGuid = c5d7389c-7473-4b47-925d-baaa4919f680
+								CmdGuid = 6b7cbc17-ba56-42ab-907f-38208eb58205
 							}
 						}
 						Commands
@@ -93126,10 +93303,10 @@ GAME
 						MechJebModuleFlightRecorder
 						{
 							markUT = 3481042.83871007
-							deltaVExpended = 5234.19045032468
-							dragLosses = 95.7771736539368
-							gravityLosses = -13862.4654361066
-							steeringLosses = 1163.44642912898
+							deltaVExpended = 4447.60268960298
+							dragLosses = 95.7771774600203
+							gravityLosses = 1408.4295296999
+							steeringLosses = 24.6002313863066
 							markLatitude = -0.0972362752984121
 							markLongitude = -74.5576703002491
 							markAltitude = 87.549514140992
@@ -93156,9 +93333,6 @@ GAME
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
 						0 = Orbit,Kerbin
-						0 = Flyby,Mun
-						0 = Escape,Mun
-						0 = Orbit,Mun
 					}
 				}
 				MODULE
@@ -93167,7 +93341,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.00685374497932032
+					amount = 4.98377085704869
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -93197,8 +93371,8 @@ GAME
 				attN = bottom, 2
 				attN = top, 0
 				mass = 0.125
-				temp = 292.05725632695
-				tempExt = 292.10343328029
+				temp = 303.945073515416
+				tempExt = 304.324850167138
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93253,8 +93427,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 0.05
-				temp = 292.077983248276
-				tempExt = 292.102725283776
+				temp = 304.084600170087
+				tempExt = 304.492265432431
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93289,7 +93463,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 981.575235830842
+					amount = 857.437286189179
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -93319,8 +93493,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.05
-				temp = 292.109717657306
-				tempExt = 292.158381465454
+				temp = 304.234299723786
+				tempExt = 304.865423473218
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93355,7 +93529,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 981.575235830842
+					amount = 857.437286189179
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -93385,8 +93559,8 @@ GAME
 				attN = top, 3
 				attN = bottom, 5
 				mass = 0.05
-				temp = 292.140334277398
-				tempExt = 292.198199398456
+				temp = 304.354359900962
+				tempExt = 305.849857709682
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93421,7 +93595,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 981.575235830842
+					amount = 857.437286189179
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -93451,8 +93625,8 @@ GAME
 				attN = top, 4
 				attN = bottom, 6
 				mass = 0.05
-				temp = 292.168827162281
-				tempExt = 292.243955295172
+				temp = 304.426930177639
+				tempExt = 306.136797424754
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93487,7 +93661,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 981.575235830842
+					amount = 857.437286189179
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -93517,8 +93691,8 @@ GAME
 				attN = top, 5
 				attN = bottom, 7
 				mass = 0.15
-				temp = 292.193886893133
-				tempExt = 292.291359314364
+				temp = 304.42713083473
+				tempExt = 309.494415648682
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93583,8 +93757,8 @@ GAME
 				attN = top, 6
 				attN = bottom, 12
 				mass = 0.15
-				temp = 292.272686212275
-				tempExt = 292.367786769721
+				temp = 304.926210603067
+				tempExt = 311.161504786663
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93650,8 +93824,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 7
 				mass = 0.05
-				temp = 292.272790895823
-				tempExt = 292.305113566891
+				temp = 304.933627436513
+				tempExt = 305.187616921161
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93745,8 +93919,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 7
 				mass = 0.05
-				temp = 292.272730698754
-				tempExt = 292.284958854823
+				temp = 304.933804494371
+				tempExt = 305.182509099571
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93840,8 +94014,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 7
 				mass = 0.05
-				temp = 292.272726194224
-				tempExt = 292.318634867963
+				temp = 304.935959288093
+				tempExt = 306.154596362063
 				expt = 0.5
 				state = 0
 				connected = True
@@ -93935,8 +94109,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 7
 				mass = 0.05
-				temp = 292.272739616761
-				tempExt = 292.311259207542
+				temp = 304.937195694873
+				tempExt = 306.095013665176
 				expt = 0.5
 				state = 0
 				connected = True
@@ -94029,8 +94203,8 @@ GAME
 				attN = top, 7
 				attN = bottom, 13
 				mass = 0.15
-				temp = 292.381864867505
-				tempExt = 292.450883019042
+				temp = 305.864511333292
+				tempExt = 313.601348858052
 				expt = 0.5
 				state = 0
 				connected = True
@@ -94095,8 +94269,8 @@ GAME
 				attN = top, 12
 				attN = bottom, 14
 				mass = 0.125
-				temp = 292.510822570165
-				tempExt = 292.538839388347
+				temp = 308.547366109041
+				tempExt = 317.097209632644
 				expt = 0.5
 				state = 0
 				connected = True
@@ -94171,8 +94345,8 @@ GAME
 				attN = top, 13
 				attN = bottom, 15
 				mass = 0.5
-				temp = 292.620911268737
-				tempExt = 292.628877870656
+				temp = 317.798791456713
+				tempExt = 323.280059203435
 				expt = 0.5
 				state = 0
 				connected = True
@@ -94404,8 +94578,8 @@ GAME
 				attN = bottom, 16
 				attN = top, 14
 				mass = 0.05
-				temp = 292.718145978885
-				tempExt = 292.70187089615
+				temp = 326.770217390103
+				tempExt = 332.570187637241
 				expt = 0.5
 				state = 0
 				connected = True
@@ -94539,8 +94713,8 @@ GAME
 				attN = top, 15
 				attN = bottom, 17
 				mass = 0.175
-				temp = 292.742229436915
-				tempExt = 292.715879980011
+				temp = 328.940464188703
+				tempExt = 334.615104171376
 				expt = 0.5
 				state = 1
 				connected = True
@@ -94602,7 +94776,7 @@ GAME
 						}
 						DeployFairing
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Deploy
 							guiName = Deploy
@@ -94654,8 +94828,8 @@ GAME
 				attN = top, 16
 				attN = bottom, 18
 				mass = 0.2
-				temp = 292.768812641676
-				tempExt = 292.762630648836
+				temp = 330.09566610804
+				tempExt = 343.715915624753
 				expt = 0.5
 				state = 0
 				connected = True
@@ -94747,8 +94921,8 @@ GAME
 				attN = top, 17
 				attN = bottom, 19
 				mass = 2
-				temp = 292.792683579951
-				tempExt = 292.792521200182
+				temp = 330.826621232147
+				tempExt = 352.260154730651
 				expt = 0.5
 				state = 0
 				connected = True
@@ -94783,7 +94957,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 342.593289424278
+					amount = 732.348780335664
 					maxAmount = 1440
 					flowState = True
 					isTweakable = True
@@ -94793,7 +94967,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 418.725066915662
+					amount = 895.092912085083
 					maxAmount = 1760
 					flowState = True
 					isTweakable = True
@@ -94823,8 +94997,8 @@ GAME
 				attN = top, 18
 				attN = bottom, -1
 				mass = 3
-				temp = 292.796293178978
-				tempExt = 292.79039416353
+				temp = 398.521009468829
+				tempExt = 381.001312607558
 				expt = 0.5
 				state = 1
 				connected = True
@@ -95047,7 +95221,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.00685374497932032
+					amount = 0
 					maxAmount = 0.199999995529652
 					flowState = True
 					isTweakable = False
@@ -95075,8 +95249,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 18
 				mass = 0.005
-				temp = 292.794333846809
-				tempExt = 292.792720692014
+				temp = 330.902690964838
+				tempExt = 334.669554250982
 				expt = 0.5
 				state = 0
 				connected = True
@@ -95259,8 +95433,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 4
 				mass = 0.03
-				temp = 292.140366519433
-				tempExt = 292.148968745572
+				temp = 304.355986219374
+				tempExt = 304.726741366016
 				expt = 0.5
 				state = 0
 				connected = True
@@ -95293,7 +95467,7 @@ GAME
 							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Toggle
-							guiName = Extend
+							guiName = Retract
 							category = Toggle
 							guiActiveUnfocused = True
 							unfocusedRange = 5
@@ -95366,17 +95540,6 @@ GAME
 							unfocusedRange = 2
 							externalToEVAOnly = True
 						}
-						EventTarget
-						{
-							active = True
-							guiActive = True
-							guiIcon = Target
-							guiName = Kerbin
-							category = Target
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
 						EventEditorOpen
 						{
 							active = True
@@ -95396,28 +95559,6 @@ GAME
 							guiIcon = Start retracted
 							guiName = Start retracted
 							category = Start retracted
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EventOpen
-						{
-							active = False
-							guiActive = False
-							guiIcon = 
-							guiName = Activate
-							category = 
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EventClose
-						{
-							active = True
-							guiActive = True
-							guiIcon = 
-							guiName = Deactivate
-							category = 
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
@@ -95455,6 +95596,39 @@ GAME
 							unfocusedRange = 5
 							externalToEVAOnly = True
 						}
+						EventTarget
+						{
+							active = True
+							guiActive = True
+							guiIcon = Target
+							guiName = Kerbin
+							category = Target
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventOpen
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = True
+							guiActive = True
+							guiIcon = 
+							guiName = Deactivate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
 					}
 					ACTIONS
 					{
@@ -95486,17 +95660,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = ModuleRTDataTransmitter
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -95521,8 +95684,8 @@ GAME
 				sym = 25
 				srfN = srfAttach, 2
 				mass = 0.0175
-				temp = 291.84769263666
-				tempExt = 291.807679045651
+				temp = 303.663496141084
+				tempExt = 303.750905465969
 				expt = 0.5
 				state = 0
 				connected = True
@@ -95543,10 +95706,10 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.05494674, -0.7049955, 0.7049478, 0.05487061)
+					currentRotation = (0.6307272, -0.3196533, 0.3196582, -0.6307327)
 					stateString = EXTENDED
 					storedAnimationTime = 0
-					storedAnimationSpeed = 0
+					storedAnimationSpeed = 1
 					EVENTS
 					{
 						Extend
@@ -95562,7 +95725,7 @@ GAME
 						}
 						Retract
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Retract Panels
 							guiName = Retract Panels
@@ -95627,8 +95790,8 @@ GAME
 				sym = 25
 				srfN = srfAttach, 2
 				mass = 0.0175
-				temp = 292.068823109444
-				tempExt = 292.068120456264
+				temp = 303.671308624562
+				tempExt = 303.768838073463
 				expt = 0.5
 				state = 0
 				connected = True
@@ -95649,10 +95812,10 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.4937634, -0.5061514, 0.5061089, 0.4938242)
+					currentRotation = (0.6646073, -0.2414558, 0.2414395, -0.6646076)
 					stateString = EXTENDED
 					storedAnimationTime = 0
-					storedAnimationSpeed = 0
+					storedAnimationSpeed = 1
 					EVENTS
 					{
 						Extend
@@ -95668,7 +95831,7 @@ GAME
 						}
 						Retract
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Retract Panels
 							guiName = Retract Panels
@@ -95733,8 +95896,8 @@ GAME
 				sym = 25
 				srfN = srfAttach, 2
 				mass = 0.0175
-				temp = 291.84376156445
-				tempExt = 291.802057000727
+				temp = 303.650173195701
+				tempExt = 303.729456248223
 				expt = 0.5
 				state = 0
 				connected = True
@@ -95755,10 +95918,10 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.05302407, 0.7050616, -0.7051607, 0.05315154)
+					currentRotation = (0.7021122, 0.08398396, -0.08396996, -0.7020928)
 					stateString = EXTENDED
 					storedAnimationTime = 0
-					storedAnimationSpeed = 0
+					storedAnimationSpeed = 1
 					EVENTS
 					{
 						Extend
@@ -95774,7 +95937,7 @@ GAME
 						}
 						Retract
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Retract Panels
 							guiName = Retract Panels
@@ -95839,8 +96002,8 @@ GAME
 				sym = 24
 				srfN = srfAttach, 2
 				mass = 0.0175
-				temp = 292.068240372117
-				tempExt = 292.063902091167
+				temp = 303.660962163942
+				tempExt = 303.747750960894
 				expt = 0.5
 				state = 0
 				connected = True
@@ -95861,10 +96024,10 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.4939089, 0.5061795, -0.5060681, 0.4936918)
+					currentRotation = (0.6645944, 0.2414437, -0.2414548, -0.6646194)
 					stateString = EXTENDED
 					storedAnimationTime = 0
-					storedAnimationSpeed = 0
+					storedAnimationSpeed = 1
 					EVENTS
 					{
 						Extend
@@ -95880,7 +96043,7 @@ GAME
 						}
 						Retract
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Retract Panels
 							guiName = Retract Panels
@@ -95942,8 +96105,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.03
-				temp = 292.057238821107
-				tempExt = 292.109272635149
+				temp = 303.921864217205
+				tempExt = 304.162660967838
 				expt = 0.5
 				state = 0
 				connected = True
@@ -95964,12 +96127,12 @@ GAME
 				{
 					name = SCANsat
 					isEnabled = True
-					scanning = True
+					scanning = False
 					EVENTS
 					{
 						startScan
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Start RADAR Scan
 							guiName = Start SAR Scan
@@ -95980,7 +96143,7 @@ GAME
 						}
 						stopScan
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Stop RADAR Scan
 							guiName = Stop SAR Scan
@@ -96089,8 +96252,8 @@ GAME
 				srfN = srfAttach, 1
 				attN = bottom, -1
 				mass = 0.03
-				temp = 292.042875136615
-				tempExt = 292.091185489504
+				temp = 303.847666095075
+				tempExt = 304.130499747853
 				expt = 0.5
 				state = 0
 				connected = True
@@ -96111,16 +96274,16 @@ GAME
 				{
 					name = DMModuleScienceAnimate
 					isEnabled = True
-					IsDeployed = True
+					IsDeployed = False
 					experimentNumber = 0
-					experimentsReturned = 9
+					experimentsReturned = 0
 					Deployed = False
 					Inoperable = False
 					EVENTS
 					{
 						deployEvent
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Deploy
 							guiName = Open Shutter
@@ -96338,8 +96501,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.03
-				temp = 292.048220659353
-				tempExt = 292.095057972909
+				temp = 303.87396449332
+				tempExt = 304.114245796052
 				expt = 0.5
 				state = 0
 				connected = True
@@ -96360,12 +96523,12 @@ GAME
 				{
 					name = SCANsat
 					isEnabled = True
-					scanning = True
+					scanning = False
 					EVENTS
 					{
 						startScan
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Start RADAR Scan
 							guiName = Start RADAR Scan
@@ -96376,7 +96539,7 @@ GAME
 						}
 						stopScan
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Stop RADAR Scan
 							guiName = Stop RADAR Scan
@@ -96485,8 +96648,8 @@ GAME
 				srfN = srfAttach, 1
 				attN = bottom, -1
 				mass = 0.02
-				temp = 292.015653253465
-				tempExt = 292.08854306458
+				temp = 303.727127918513
+				tempExt = 304.103203150058
 				expt = 0.5
 				state = 0
 				connected = True
@@ -96509,14 +96672,14 @@ GAME
 					isEnabled = True
 					IsDeployed = False
 					experimentNumber = 0
-					experimentsReturned = 1
+					experimentsReturned = 0
 					Deployed = False
 					Inoperable = False
 					EVENTS
 					{
 						deployEvent
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Deploy
 							guiName = Deploy Scanners
@@ -96734,8 +96897,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 0
 				mass = 0.005
-				temp = 292.016301094938
-				tempExt = 292.047599099686
+				temp = 303.738488929921
+				tempExt = 303.934449851486
 				expt = 0.5
 				state = 0
 				connected = True
@@ -96787,17 +96950,6 @@ GAME
 					Inoperable = False
 					EVENTS
 					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy
-							guiName = Log Gravity Data
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
 						CollectDataExternalEvent
 						{
 							active = True
@@ -96807,17 +96959,6 @@ GAME
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 1.2
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = True
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Data
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
 							externalToEVAOnly = True
 						}
 						ResetExperiment
@@ -96864,6 +97005,28 @@ GAME
 							unfocusedRange = 1.2
 							externalToEVAOnly = True
 						}
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy
+							guiName = Log Gravity Data
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = True
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Data
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
 					}
 					ACTIONS
 					{
@@ -96907,8 +97070,8 @@ GAME
 				srfN = srfAttach, 0
 				attN = bottom, -1
 				mass = 0.015
-				temp = 291.98470032433
-				tempExt = 292.055093738442
+				temp = 303.602935197805
+				tempExt = 303.933685993472
 				expt = 0.5
 				state = 1
 				connected = True
@@ -96942,14 +97105,14 @@ GAME
 					isEnabled = True
 					IsDeployed = False
 					experimentNumber = 0
-					experimentsReturned = 2
+					experimentsReturned = 0
 					Deployed = False
 					Inoperable = False
 					EVENTS
 					{
 						deployEvent
 						{
-							active = False
+							active = True
 							guiActive = False
 							guiIcon = Deploy
 							guiName = Deploy Magnetometer
@@ -97323,8 +97486,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 0
 				mass = 0.005
-				temp = 292.01140728325
-				tempExt = 292.067803402924
+				temp = 303.714602058
+				tempExt = 304.017717080931
 				expt = 0.5
 				state = 0
 				connected = True
@@ -97496,8 +97659,8 @@ GAME
 				srfN = srfAttach, 0
 				attN = bottom, -1
 				mass = 0.015
-				temp = 292.003465059012
-				tempExt = 292.070829628706
+				temp = 303.670598262882
+				tempExt = 303.97147910482
 				expt = 0.5
 				state = 0
 				connected = True
@@ -97518,7 +97681,7 @@ GAME
 				{
 					name = DMAnomalyScanner
 					isEnabled = True
-					IsDeployed = True
+					IsDeployed = False
 					experimentNumber = 0
 					experimentsReturned = 0
 					Deployed = False
@@ -97713,12 +97876,12 @@ GAME
 				{
 					name = SCANsat
 					isEnabled = True
-					scanning = True
+					scanning = False
 					EVENTS
 					{
 						startScan
 						{
-							active = False
+							active = True
 							guiActive = True
 							guiIcon = Start RADAR Scan
 							guiName = Start BTDT scan
@@ -97729,7 +97892,7 @@ GAME
 						}
 						stopScan
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiIcon = Stop RADAR Scan
 							guiName = Stop BTDT scan
@@ -97854,8 +98017,8 @@ GAME
 				srfN = srfAttach, 0
 				attN = bottom, -1
 				mass = 0.01
-				temp = 292.02136001923
-				tempExt = 292.060146678523
+				temp = 303.651489385394
+				tempExt = 303.982828778536
 				expt = 0.5
 				state = 0
 				connected = True
@@ -97888,7 +98051,7 @@ GAME
 							guiActive = False
 							guiActiveEditor = True
 							guiIcon = Toggle
-							guiName = Extend
+							guiName = Retract
 							category = Toggle
 							guiActiveUnfocused = True
 							unfocusedRange = 5
@@ -97963,28 +98126,6 @@ GAME
 							unfocusedRange = 2
 							externalToEVAOnly = True
 						}
-						EventOpen
-						{
-							active = False
-							guiActive = False
-							guiIcon = 
-							guiName = Activate
-							category = 
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EventClose
-						{
-							active = True
-							guiActive = True
-							guiIcon = 
-							guiName = Deactivate
-							category = 
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
 						OverrideTarget
 						{
 							active = True
@@ -98018,6 +98159,28 @@ GAME
 							unfocusedRange = 5
 							externalToEVAOnly = True
 						}
+						EventOpen
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = True
+							guiActive = True
+							guiIcon = 
+							guiName = Deactivate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
 					}
 					ACTIONS
 					{
@@ -98049,6 +98212,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = ModuleRTDataTransmitter
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			ACTIONGROUPS
 			{
@@ -98056,7 +98230,7 @@ GAME
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = False, 4634464.87916543
+				SAS = False, 3482464.67694539
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -98081,589 +98255,20 @@ GAME
 			FLIGHTPLAN
 			{
 			}
+			TARGET
+			{
+				type = CelestialBody
+				tgtId = Mun
+			}
 			CTRLSTATE
 			{
-				pitch = 0.1513426
-				yaw = 0.4327537
-				roll = -0.0005275798
+				pitch = -0.0001967933
+				yaw = 4.915975E-05
+				roll = 5.572917E-08
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
 				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = 1bd84a21ee564fdc9e120e86fc1aaefe
-			name = Ast. YNU-281
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 3711517.25133639
-			lct = 3711517.25133639
-			root = 0
-			lat = 0.400659945635011
-			lon = 112.682346668823
-			alt = 13857958925.6485
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.2567828,-0.1961829,0.2053041,0.9238101
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 14149106636.0868
-				ECC = 0.0407161707496272
-				INC = 0.402571600925791
-				LPE = 184.978775037492
-				LAN = 230.027394675538
-				MNA = 0.0101380717133703
-				EPH = 6025984.6402524
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1087901496
-				mid = 1087901496
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 3711517.25133639
-				lifetime = 949594.812011719
-				refTime = 1728000
-				size = 1
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = e7fb33b3ef104b2b8135a36f82f4b695
-			name = Ast. VFE-562
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 3757717.25133639
-			lct = 3757717.25133639
-			root = 0
-			lat = -1.28514837036745
-			lon = 76.1174864464283
-			alt = 14106180705.0825
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.3902324,-0.7305756,0.4660176,0.3111359
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 14496890329.6599
-				ECC = 0.0621075282015822
-				INC = 1.29703115443445
-				LPE = 347.534335986885
-				LAN = 65.3114864300076
-				MNA = 0.018266133439156
-				EPH = 5988359.89049654
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1911063816
-				mid = 1911063816
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 3757717.25133639
-				lifetime = 1583646.73461914
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 78655662837d47f28ab684a1a80b411d
-			name = Ast. NWG-375
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 3979117.25133639
-			lct = 3979117.25133639
-			root = 0
-			lat = 0.936361602353548
-			lon = 260.394470906614
-			alt = 13672655896.5024
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.4419296,0.1407225,0.5985766,0.6531473
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 13917482595.4703
-				ECC = 0.0235471672322656
-				INC = 1.08262197040658
-				LPE = 214.407541967115
-				LAN = 216.194036165825
-				MNA = 5.77945857460708
-				EPH = 5639214.98693209
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1869725776
-				mid = 1869725776
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 3979117.25133639
-				lifetime = 1068012.81738281
-				refTime = 1728000
-				size = 0
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = d47d4e553aff49b2942105d258d99fcf
-			name = Ast. YRJ-600
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4017717.25133639
-			lct = 4017717.25133639
-			root = 0
-			lat = -0.5140670167525
-			lon = 230.003034850129
-			alt = 13613973654.4913
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.5565062,0.2236041,-0.4557615,0.6577108
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 13756643697.2681
-				ECC = 0.015834306138436
-				INC = 0.593278712295656
-				LPE = 63.7956302237066
-				LAN = 38.152547602753
-				MNA = 5.35937783027186
-				EPH = 5822770.08336764
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 939837830
-				mid = 939837830
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4017717.25133639
-				lifetime = 1079853.08532715
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = c54d99418667498b879e1101f94044f9
-			name = Ast. XMO-808
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4466716.08809426
-			lct = 4466716.08809426
-			root = 0
-			lat = -0.41800050057256
-			lon = 234.59508684202
-			alt = 13756160974.6867
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.6236157,-0.7211208,0.2976274,0.05006149
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 13781410465.8707
-				ECC = 0.0209866676580757
-				INC = 0.560059957265262
-				LPE = 13.7666377026609
-				LAN = 128.584253163092
-				MNA = 5.49359656162068
-				EPH = 7045172.08785012
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 858140047
-				mid = 858140047
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4466716.08809426
-				lifetime = 1065182.46459961
-				refTime = 1728000
-				size = 0
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 2c3ebfaed9dc49ccad507cec4c9c1910
-			name = Ast. KTW-078
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4618198.85168801
-			lct = 4618198.85168801
-			root = 0
-			lat = 0.454294639930249
-			lon = 120.091884754572
-			alt = 14888013986.9882
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.3963658,-0.3171583,0.619473,0.5987972
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 14566653863.1457
-				ECC = 0.0648076110077082
-				INC = 0.4857001034759
-				LPE = 200.284493533011
-				LAN = 299.308270563488
-				MNA = 6.1105519632984
-				EPH = 7886409.76477395
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 2103598798
-				mid = 2103598798
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4618198.85168801
-				lifetime = 253476.857757568
-				refTime = 1728000
-				size = 3
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = d264b01f06c7488ca99e42e66d6d2fa1
-			name = Ast. ROF-621
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 4626588.55285989
-			lct = 4626588.55285989
-			root = 0
-			lat = -0.928552718784889
-			lon = 105.745656961099
-			alt = 13655231100.8402
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.6467254,-0.08003038,-0.7369179,0.1797035
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 13864555836.6518
-				ECC = 0.0191766412453999
-				INC = 1.3010376921465
-				LPE = 327.953800133734
-				LAN = 135.704147368392
-				MNA = 0.425765960309292
-				EPH = 7906978.46985208
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1031572926
-				mid = 1031572926
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 4626588.55285989
-				lifetime = 593714.616394043
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
 			}
 		}
 	}
@@ -98759,48 +98364,6 @@ GAME
 			badS = True
 			tour = False
 			state = Available
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Aslotte Kerman
-			gender = Female
-			type = Unowned
-			brave = 0.2927133
-			dumb = 0.9708912
-			badS = False
-			tour = False
-			state = Assigned
-			ToD = 0
-			idx = -1
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Leena Kerman
-			gender = Female
-			type = Unowned
-			brave = 0.6101465
-			dumb = 0.4665794
-			badS = False
-			tour = False
-			state = Assigned
 			ToD = 0
 			idx = -1
 			CAREER_LOG

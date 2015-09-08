@@ -1,4 +1,4 @@
-ship = Miracle 3
+ship = Miracle 2
 version = 1.0.4
 description = 
 type = VAB
@@ -3051,6 +3051,8 @@ PART
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = batteryBank_4287976176
+	link = spotLight1_4287968612
+	link = spotLight1_4287964668
 	link = mediumDishAntenna_4287952178
 	attN = top,batteryBank_4294650726
 	attN = bottom,batteryBank_4287976176
@@ -4095,6 +4097,246 @@ PART
 }
 PART
 {
+	part = spotLight1_4287968612
+	partName = Part
+	pos = -0.7405955,29.59686,-0.2957386
+	attPos = 0,0,0
+	attPos0 = -0.8181067,-0.0003643036,2.980232E-08
+	rot = -0.7071068,0,-0.7071068,0
+	attRot = 0,0,-0.9999999,0
+	attRot0 = -0.7071068,0,-0.7071068,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = spotLight1_4287964668
+	srfN = srfAttach,batteryBank_4287976798
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 100
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight1_4287964668
+	partName = Part
+	pos = 0.8956178,29.59686,-0.2957387
+	attPos = 0,0,0
+	attPos0 = 0.8181067,-0.0003643036,-8.940697E-08
+	rot = -0.7071068,0,0.7071068,0
+	attRot = 0,0,-0.9999999,0
+	attRot0 = -0.7071068,0,0.7071069,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = spotLight1_4287968612
+	srfN = srfAttach,batteryBank_4287976798
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 100
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
 	part = mediumDishAntenna_4287952178
 	partName = Part
 	pos = 0.07751119,29.60368,0.3343917
@@ -4561,7 +4803,7 @@ PART
 	sqor = 1
 	sepI = 0
 	attm = 0
-	modCost = 622.7688
+	modCost = 622.7687
 	modMass = 1.037948
 	modSize = (0.0, 0.0, 0.0)
 	link = asasmodule1-2_4288044110
@@ -6933,7 +7175,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 4.467443
+		scaleFactor = 4.467442
 		height = 11.27224
 		towerRot = 1.256074E-15,-0.7071068,-1.256074E-15,0.7071068
 		EVENTS
@@ -7053,7 +7295,7 @@ PART
 	pos = 4.725152,10.61209,-0.2957391
 	attPos = 0,0,0
 	attPos0 = -2.017515,-3.068941,1.514488E-07
-	rot = 1.256074E-15,0.7071068,1.256074E-15,-0.7071068
+	rot = 1.256074E-15,0.7071068,1.256074E-15,-0.7071069
 	attRot = 0,0,0,1
 	attRot0 = -1.301335E-23,0.7071068,2.169108E-22,0.7071068
 	mir = 1,1,1
@@ -7082,9 +7324,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 4.467443
+		scaleFactor = 4.467442
 		height = 11.27224
-		towerRot = -1.256074E-15,-0.7071068,-1.256074E-15,-0.7071068
+		towerRot = -1.256074E-15,-0.7071068,-1.256074E-15,-0.7071069
 		EVENTS
 		{
 			Release

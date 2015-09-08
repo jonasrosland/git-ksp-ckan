@@ -850,6 +850,10 @@ PART
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = batteryBank_4294650726
+	link = solarPanels3_4294588664
+	link = solarPanels3_4294587786
+	link = solarPanels3_4294587680
+	link = solarPanels3_4294587574
 	attN = top,probeCoreHex_4293551788
 	attN = bottom,batteryBank_4294650726
 	EVENTS
@@ -4286,7 +4290,7 @@ PART
 	symMethod = Radial
 	istg = 4
 	dstg = 6
-	sidx = 3
+	sidx = 0
 	sqor = 4
 	sepI = 3
 	attm = 0
@@ -4690,7 +4694,7 @@ PART
 	pos = 2.705889,8.518791,-0.1792374
 	attPos = 0,0,0
 	attPos0 = -1.411845,-0.3240433,1.068307E-08
-	rot = 1.776357E-15,1,-2.779182E-24,-4.371139E-08
+	rot = 1.776357E-15,1,-2.779185E-24,-4.371139E-08
 	attRot = 0,0,0,1
 	attRot0 = -7.486784E-23,0,1.776357E-15,1
 	mir = 1,1,1
@@ -4769,7 +4773,7 @@ PART
 	symMethod = Radial
 	istg = 4
 	dstg = 6
-	sidx = 4
+	sidx = 1
 	sqor = 4
 	sepI = 3
 	attm = 0
@@ -5063,9 +5067,9 @@ PART
 	symMethod = Radial
 	istg = 4
 	dstg = 4
-	sidx = 0
+	sidx = 2
 	sqor = 4
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5213,9 +5217,9 @@ PART
 	symMethod = Radial
 	istg = 4
 	dstg = 4
-	sidx = 1
+	sidx = 3
 	sqor = 4
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5363,9 +5367,9 @@ PART
 	symMethod = Radial
 	istg = 4
 	dstg = 4
-	sidx = 2
+	sidx = 4
 	sqor = 4
-	sepI = 5
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5913,6 +5917,402 @@ PART
 		IsRTPowered = False
 		IsRTSignalProcessor = True
 		IsRTCommandStation = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels3_4294588664
+	partName = Part
+	pos = -0.3631302,30.56292,-0.6181309
+	attPos = 0,0,0
+	attPos0 = -0.4388938,-0.06507111,-0.4388938
+	rot = 5.020021E-08,0.3826834,-1.21194E-07,-0.9238796
+	attRot = 0,0,0,1
+	attRot0 = 5.020021E-08,0.3826834,-1.21194E-07,-0.9238796
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294587786
+	sym = solarPanels3_4294587680
+	sym = solarPanels3_4294587574
+	srfN = srfAttach,batteryBank_4294651622
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels3_4294587786
+	partName = Part
+	pos = -0.3631302,30.56292,0.2596566
+	attPos = 0,0,0
+	attPos0 = -0.4388938,-0.06507111,0.4388937
+	rot = -5.020022E-08,-0.3826835,-1.21194E-07,-0.9238795
+	attRot = 0,0,0,1
+	attRot0 = -5.020022E-08,-0.3826835,-1.21194E-07,-0.9238795
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294588664
+	sym = solarPanels3_4294587680
+	sym = solarPanels3_4294587574
+	srfN = srfAttach,batteryBank_4294651622
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels3_4294587680
+	partName = Part
+	pos = 0.5146574,30.56292,0.2596566
+	attPos = 0,0,0
+	attPos0 = 0.4388938,-0.06507111,0.4388937
+	rot = -1.21194E-07,-0.9238796,-5.02002E-08,-0.3826834
+	attRot = 0,0,0,1
+	attRot0 = -1.21194E-07,-0.9238796,-5.02002E-08,-0.3826834
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294588664
+	sym = solarPanels3_4294587786
+	sym = solarPanels3_4294587574
+	srfN = srfAttach,batteryBank_4294651622
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels3_4294587574
+	partName = Part
+	pos = 0.5146573,30.56292,-0.6181309
+	attPos = 0,0,0
+	attPos0 = 0.4388937,-0.06507111,-0.4388938
+	rot = -1.21194E-07,-0.9238795,5.020022E-08,0.3826835
+	attRot = 0,0,0,1
+	attRot0 = -1.21194E-07,-0.9238795,5.020022E-08,0.3826835
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = solarPanels3_4294588664
+	sym = solarPanels3_4294587786
+	sym = solarPanels3_4294587680
+	srfN = srfAttach,batteryBank_4294651622
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = False
+				guiActive = False
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 380
 		EVENTS
 		{
 		}
