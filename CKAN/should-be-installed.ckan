@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2015.09.08.01.20.10",
+	"version": "2015.09.09.10.20.39",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
@@ -170,6 +170,34 @@
 		{
 			"name": "KerboKatzUtilities",
 			"version": "1.2.11"
+		},
+		{
+			"name": "KerbalAlarmClock",
+			"version": "v3.4.0.0"
+		},
+		{
+			"name": "CoolRockets",
+			"version": "0.08"
+		},
+		{
+			"name": "UKS",
+			"version": "0.31.6"
+		},
+		{
+			"name": "FirespitterCore",
+			"version": "v7.1.4"
+		},
+		{
+			"name": "USITools",
+			"version": "0.4.2"
+		},
+		{
+			"name": "CommunityResourcePack",
+			"version": "0.4.4"
+		},
+		{
+			"name": "PartCommander",
+			"version": "1.0.2.4"
 		}
 	]
 }
