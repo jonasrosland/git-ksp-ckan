@@ -3,13 +3,13 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2015.09.09.10.20.39",
+	"version": "2015.09.14.02.22.30",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
 		{
 			"name": "RemoteTech",
-			"version": "v1.6.7"
+			"version": "v1.6.8"
 		},
 		{
 			"name": "ModuleManager",
@@ -198,6 +198,18 @@
 		{
 			"name": "PartCommander",
 			"version": "1.0.2.4"
+		},
+		{
+			"name": "RasterPropMonitor",
+			"version": "v0.22.2"
+		},
+		{
+			"name": "RasterPropMonitor-Core",
+			"version": "v0.22.2"
+		},
+		{
+			"name": "PortraitStats",
+			"version": "6.0"
 		}
 	]
 }
