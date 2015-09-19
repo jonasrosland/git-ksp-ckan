@@ -3,21 +3,37 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2015.09.04.09.58.28",
+	"version": "2015.09.18.03.39.38",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"depends": [
 		{
 			"name": "RemoteTech",
-			"version": "v1.6.7"
+			"version": "v1.6.8"
+		},
+		{
+			"name": "ModuleManager",
+			"version": "2.6.8"
 		},
 		{
 			"name": "ContractConfigurator",
-			"version": "1.7.2"
+			"version": "1.7.4"
 		},
 		{
 			"name": "TarsierSpaceTechnologyWithGalaxies",
 			"version": "1:5.4.1"
+		},
+		{
+			"name": "KAS",
+			"version": "0.5.4"
+		},
+		{
+			"name": "KIS",
+			"version": "1.2.2"
+		},
+		{
+			"name": "Toolbar",
+			"version": "1.7.9"
 		},
 		{
 			"name": "DockingPortAlignmentIndicator",
@@ -64,18 +80,6 @@
 			"version": "v14.2"
 		},
 		{
-			"name": "ModuleManager",
-			"version": "2.6.8"
-		},
-		{
-			"name": "KAS",
-			"version": "0.5.4"
-		},
-		{
-			"name": "KIS",
-			"version": "1.2.2"
-		},
-		{
 			"name": "ContractConfigurator-RemoteTechLite",
 			"version": "1.1"
 		},
@@ -100,12 +104,12 @@
 			"version": "1:v10.4.9"
 		},
 		{
-			"name": "RealPlume-StockConfigs",
-			"version": "v0.7"
-		},
-		{
 			"name": "SmokeScreen",
 			"version": "2.6.9"
+		},
+		{
+			"name": "RealPlume-StockConfigs",
+			"version": "v0.7"
 		},
 		{
 			"name": "EngineLighting",
@@ -158,6 +162,54 @@
 		{
 			"name": "AtmosphericSoundEnhancement",
 			"version": "2.2"
+		},
+		{
+			"name": "ForScienceContinued",
+			"version": "1.1.0"
+		},
+		{
+			"name": "KerboKatzUtilities",
+			"version": "1.2.11"
+		},
+		{
+			"name": "KerbalAlarmClock",
+			"version": "v3.4.0.0"
+		},
+		{
+			"name": "CoolRockets",
+			"version": "0.08"
+		},
+		{
+			"name": "UKS",
+			"version": "0.31.6"
+		},
+		{
+			"name": "FirespitterCore",
+			"version": "v7.1.4"
+		},
+		{
+			"name": "USITools",
+			"version": "0.4.2"
+		},
+		{
+			"name": "CommunityResourcePack",
+			"version": "0.4.4"
+		},
+		{
+			"name": "PartCommander",
+			"version": "1.0.2.4"
+		},
+		{
+			"name": "RasterPropMonitor",
+			"version": "v0.22.2"
+		},
+		{
+			"name": "RasterPropMonitor-Core",
+			"version": "v0.22.2"
+		},
+		{
+			"name": "PortraitStats",
+			"version": "6.0"
 		}
 	]
 }
